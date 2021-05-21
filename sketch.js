@@ -19,19 +19,19 @@ function setup() {
 }
 
 function draw() {
-  background(255,255,255);
+  background("Brown");
   
   if(wall.x-car.x < (car.width+wall.width)/2)
   car.velocityX=0;
   var deformation=0.5*speed*weight*speed/22509;
   if(deformation > 180){
-    car.shapecolor="red";
+    car.shapeColor="red";
   }
   if(deformation<180 && deformation>100){
-    car.shapecolor="yellow";
+    car.shapeColor="yellow";
   }
   if(deformation < 100){
-    car.shapecolor="green";
+    car.shapeColor="green";
   }
 
 
