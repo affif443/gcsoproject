@@ -25,13 +25,16 @@ function draw() {
   car.velocityX=0;
   var deformation=0.5*speed*weight*speed/22509;
   if(deformation > 180){
-    car.shapeColor="red";
+    car.shapeColor= color("red");
+    wall.shapeColor=color("white");
   }
   if(deformation<180 && deformation>100){
-    car.shapeColor="yellow";
+    car.shapeColor=color("yellow");
+    wall.shapeColor=color("white");
   }
   if(deformation < 100){
-    car.shapeColor="green";
+    car.shapeColor=color("green");
+    wall.shapeColor=color("white");
   }
 
 
